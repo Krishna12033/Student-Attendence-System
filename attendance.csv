@@ -1,0 +1,212 @@
+attendance_id,student_id,date,status
+1,12033028,2024-11-04,Present
+2,12033028,2024-11-04,Present
+3,12033028,2024-11-04,Absent
+4,12033028,2024-11-04,Present
+5,12033028,2024-11-04,Absent
+6,1203313,2024-11-04,Present
+7,12033028,2024-11-04,Present
+8,12033028,2024-11-04,Absent
+9,1203313,2024-11-04,Present
+10,123456,2024-11-04,Present
+11,123457,2024-11-04,Present
+12,12033028,2024-11-04,Present
+13,12033028,2024-11-04,Present
+14,1203313,2024-11-04,Present
+15,123456,2024-11-04,Absent
+16,123457,2024-11-04,Absent
+17,12033919,2024-11-04,Absent
+18,120225025,2024-11-04,Absent
+19,7878787,2024-11-04,Absent
+20,120300,2024-11-04,Absent
+21,12033028,2024-11-04,Absent
+22,12033028,2024-11-04,Absent
+23,1203313,2024-11-04,Absent
+24,123456,2024-11-04,Absent
+25,123457,2024-11-04,Absent
+26,12033919,2024-11-04,Absent
+27,120225025,2024-11-04,Absent
+28,7878787,2024-11-04,Absent
+29,120300,2024-11-04,Absent
+30,12033028,2024-11-04,Absent
+31,12033028,2024-11-04,Absent
+32,1203313,2024-11-04,Absent
+33,123456,2024-11-04,Absent
+34,123457,2024-11-04,Absent
+35,12033919,2024-11-04,Absent
+36,120225025,2024-11-04,Absent
+37,7878787,2024-11-04,Absent
+38,120300,2024-11-04,Absent
+39,12033028,2024-11-04,Absent
+40,12033028,2024-11-04,Absent
+41,1203313,2024-11-04,Absent
+42,12033028,2024-11-04,Absent
+43,12033028,2024-11-05,Absent
+44,12033028,2024-11-05,Absent
+45,1203313,2024-11-05,Absent
+46,123456,2024-11-05,Absent
+47,123457,2024-11-05,Absent
+48,12033919,2024-11-05,Absent
+49,120225025,2024-11-05,Absent
+50,7878787,2024-11-05,Absent
+51,120300,2024-11-05,Absent
+52,12033028,2024-11-05,Absent
+53,12033028,2024-11-05,Absent
+54,1203313,2024-11-05,Absent
+55,12033028,2024-11-05,Absent
+56,147852,2024-11-05,Absent
+57,147963,2024-11-05,Absent
+58,852963,2024-11-05,Absent
+59,12033028,11/5/24,Absent
+60,12033028,11/5/24,Absent
+61,1203313,11/5/24,Absent
+62,123456,11/5/24,Absent
+63,123457,11/5/24,Absent
+64,12033919,11/5/24,Absent
+65,120225025,11/5/24,Absent
+66,7878787,11/5/24,Absent
+67,120300,11/5/24,Absent
+68,12033028,11/5/24,Absent
+69,12033028,11/5/24,Absent
+70,1203313,11/5/24,Absent
+71,12033028,11/5/24,Absent
+72,147852,11/5/24,Absent
+73,147963,11/5/24,Absent
+74,852963,11/5/24,Absent
+75,12033028,11/5/24,Absent
+76,12033028,11/12/24,Absent
+77,12033028,11/12/24,Absent
+78,1203313,11/12/24,Absent
+79,123456,11/12/24,Absent
+80,123457,11/12/24,Absent
+81,12033919,11/12/24,Absent
+82,120225025,11/12/24,Absent
+83,7878787,11/12/24,Absent
+84,120300,11/12/24,Absent
+85,12033028,11/12/24,Present
+86,12033028,11/12/24,Present
+87,1203313,11/12/24,Present
+88,12033028,11/12/24,Absent
+89,147852,11/12/24,Absent
+90,147963,11/12/24,Absent
+91,852963,11/12/24,Absent
+92,12033028,11/12/24,Absent
+93,12033028,2024-11-06,Present
+94,12033028,2024-11-06,Absent
+95,1203313,2024-11-06,Absent
+96,123456,2024-11-06,Present
+97,123457,2024-11-06,Absent
+98,12033919,2024-11-06,Absent
+99,120225025,2024-11-06,Present
+100,7878787,2024-11-06,Absent
+101,120300,2024-11-06,Absent
+102,12033028,2024-11-06,Absent
+103,12033028,2024-11-06,Absent
+104,1203313,2024-11-06,Absent
+105,12033028,2024-11-06,Absent
+106,147852,2024-11-06,Absent
+107,147963,2024-11-06,Absent
+108,852963,2024-11-06,Absent
+109,12033028,2024-11-06,Absent
+110,12033028,2024-11-06,Absent
+111,12033028,2024-11-06,Absent
+112,1203313,2024-11-06,Absent
+113,123456,2024-11-06,Absent
+114,123457,2024-11-06,Absent
+115,12033919,2024-11-06,Absent
+116,120225025,2024-11-06,Absent
+117,7878787,2024-11-06,Absent
+118,120300,2024-11-06,Absent
+119,12033028,2024-11-06,Absent
+120,12033028,2024-11-06,Absent
+121,1203313,2024-11-06,Absent
+122,12033028,2024-11-06,Absent
+123,147852,2024-11-06,Absent
+124,147963,2024-11-06,Absent
+125,852963,2024-11-06,Absent
+126,12033028,2024-11-06,Absent
+127,12033028,11/7/24,Present
+128,12033028,11/7/24,Present
+129,1203313,11/7/24,Absent
+130,123456,11/7/24,Absent
+131,123457,11/7/24,Present
+132,12033919,11/7/24,Absent
+133,120225025,11/7/24,Absent
+134,7878787,11/7/24,Absent
+135,120300,11/7/24,Absent
+136,12033028,11/7/24,Absent
+137,12033028,11/7/24,Absent
+138,1203313,11/7/24,Absent
+139,12033028,11/7/24,Absent
+140,147852,11/7/24,Absent
+141,147963,11/7/24,Absent
+142,852963,11/7/24,Absent
+143,12033028,11/7/24,Absent
+144,12033028,Select Date for Attendance,Absent
+145,12033028,Select Date for Attendance,Absent
+146,1203313,Select Date for Attendance,Absent
+147,123456,Select Date for Attendance,Absent
+148,123457,Select Date for Attendance,Absent
+149,12033919,Select Date for Attendance,Absent
+150,120225025,Select Date for Attendance,Absent
+151,7878787,Select Date for Attendance,Absent
+152,120300,Select Date for Attendance,Absent
+153,12033028,Select Date for Attendance,Absent
+154,12033028,Select Date for Attendance,Absent
+155,1203313,Select Date for Attendance,Absent
+156,12033028,Select Date for Attendance,Absent
+157,147852,Select Date for Attendance,Absent
+158,147963,Select Date for Attendance,Absent
+159,852963,Select Date for Attendance,Absent
+160,12033028,Select Date for Attendance,Absent
+161,12033028,Select Date for Attendance,Absent
+162,12033028,Select Date for Attendance,Absent
+163,1203313,Select Date for Attendance,Absent
+164,123456,Select Date for Attendance,Absent
+165,123457,Select Date for Attendance,Present
+166,12033919,Select Date for Attendance,Absent
+167,120225025,Select Date for Attendance,Present
+168,7878787,Select Date for Attendance,Absent
+169,120300,Select Date for Attendance,Present
+170,12033028,Select Date for Attendance,Absent
+171,12033028,Select Date for Attendance,Absent
+172,1203313,Select Date for Attendance,Absent
+173,12033028,Select Date for Attendance,Absent
+174,147852,Select Date for Attendance,Absent
+175,147963,Select Date for Attendance,Absent
+176,852963,Select Date for Attendance,Absent
+177,12033028,Select Date for Attendance,Absent
+178,12033028,Select Date for Attendance,Absent
+179,12033028,Select Date for Attendance,Absent
+180,1203313,Select Date for Attendance,Absent
+181,123456,Select Date for Attendance,Absent
+182,123457,Select Date for Attendance,Absent
+183,12033919,Select Date for Attendance,Present
+184,120225025,Select Date for Attendance,Absent
+185,7878787,Select Date for Attendance,Absent
+186,120300,Select Date for Attendance,Absent
+187,12033028,Select Date for Attendance,Absent
+188,12033028,Select Date for Attendance,Absent
+189,1203313,Select Date for Attendance,Absent
+190,12033028,Select Date for Attendance,Absent
+191,147852,Select Date for Attendance,Absent
+192,147963,Select Date for Attendance,Absent
+193,852963,Select Date for Attendance,Absent
+194,12033028,Select Date for Attendance,Absent
+195,12033028,Select Date for Attendance,Absent
+196,12033028,Select Date for Attendance,Absent
+197,1203313,Select Date for Attendance,Absent
+198,123456,Select Date for Attendance,Absent
+199,123457,Select Date for Attendance,Absent
+200,12033919,Select Date for Attendance,Absent
+201,120225025,Select Date for Attendance,Absent
+202,7878787,Select Date for Attendance,Absent
+203,120300,Select Date for Attendance,Present
+204,12033028,Select Date for Attendance,Absent
+205,12033028,Select Date for Attendance,Absent
+206,1203313,Select Date for Attendance,Absent
+207,12033028,Select Date for Attendance,Absent
+208,147852,Select Date for Attendance,Absent
+209,147963,Select Date for Attendance,Absent
+210,852963,Select Date for Attendance,Absent
+211,12033028,Select Date for Attendance,Absent
