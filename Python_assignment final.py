@@ -81,8 +81,8 @@ def initialize_login():
     
     login_window.mainloop()
 
+
 def show_registration():
-    
     registration_window = tk.Toplevel()
     registration_window.title("Student Registration")
     registration_window.config(bg="lightblue")
@@ -90,25 +90,36 @@ def show_registration():
 
     tk.Label(registration_window, text="Student Registration", font=("Arial", 16)).pack(pady=20)
 
+    # Name Entry Field
     tk.Label(registration_window, text="Enter your name:", font=("Arial", 12)).pack(pady=5)
     entry_name = tk.Entry(registration_window, font=("Arial", 12))
     entry_name.pack(pady=5)
+    
+    # ID Entry Field
     tk.Label(registration_window, text="Enter your ID:", font=("Arial", 12)).pack(pady=5)
-    entry_name = tk.Entry(registration_window, font=("Arial", 12))
-    entry_name.pack(pady=5)
-    def register_student():
-        name = entry_name.get()
-        if name:
-            students, _ = load_data()
-            student_id = len(students) + 1
-            students = students.append({'student_id': student_id, 'name': name}, ignore_index=True)
-            save_data(students, None)  
-            messagebox.showinfo("Success", f"Student {name} registered successfully!")
-            registration_window.destroy()  
-        else:
-            messagebox.showerror("Error", "Please enter a valid name.")
+    entry_id = tk.Entry(registration_window, font=("Arial", 12))
+    entry_id.pack(pady=5)
 
+    def register_student():
+        name = entry_name.get()  # Get the student name from the entry widget
+        if name:  # If name is not empty
+            students, attendance = load_data()  # Load both students and attendance data
+            student_id = len(students) + 1  # Generate a new student ID
+            new_student = {'student_id': student_id, 'name': name}
+            students = students.append(new_student, ignore_index=True)  # Append the new student
+            save_data(students, attendance)  # Save the updated students and attendance data
+            messagebox.showinfo("Success", f"Student {name} registered successfully!")  # Success message
+            registration_window.destroy()  # Close the registration window
+        else:
+            messagebox.showerror("Error", "Please enter a valid name.")  # Show error if name is empty
+
+
+
+    # Register Button
     tk.Button(registration_window, text="Register", command=register_student).pack(pady=10)
+
+
+
 
 
 def handle_login():
@@ -126,16 +137,13 @@ def handle_login():
 def instructor_functions():
     global checkboxes, date_label
 
-
     instructor_window = tk.Toplevel()
     instructor_window.title("Instructor Functions")
     instructor_window.geometry("1400x700")
     instructor_window.config(bg="lightblue")
 
-    
     tk.Label(instructor_window, text="Instructor Attendance Functions", font=("Arial", 24, "bold"), bg="lightblue", fg="black").pack(pady=10)
 
-    
     frame_attendance = tk.Frame(instructor_window, bg="lightblue")
     frame_attendance.pack(pady=20)
 
@@ -150,9 +158,7 @@ def instructor_functions():
 
     tk.Button(frame_attendance, text="Record Attendance", command=mark_attendance).grid(row=len(students) + 1, columnspan=2, pady=10)
 
-    
     tk.Button(instructor_window, text="View Registered Students", command=view_students).pack(pady=5)
-
     tk.Button(instructor_window, text="Return to Login Page", command=instructor_window.destroy).pack(pady=5)
 
     date_label = tk.Label(instructor_window, text="Select Date for Attendance", font=("Arial", 16), bg="lightblue")
@@ -176,6 +182,7 @@ def open_calendar(date_label):
     
     tk.Button(calendar_window, text="Set Date", command=set_date).pack(pady=10)
 
+
 def mark_attendance():
     students, attendance = load_data()
     date = date_label.cget("text").split(": ")[-1]
@@ -189,10 +196,54 @@ def mark_attendance():
     save_data(students, attendance)
     messagebox.showinfo("Success", "Attendance recorded successfully")
 
+
 def view_students():
     students, _ = load_data()
     student_list = "\n".join(f"ID: {row['student_id']}, Name: {row['name']}" for _, row in students.iterrows())
     messagebox.showinfo("Registered Students", student_list if student_list else "No registered students.")
+
+
+def show_registration():
+    registration_window = tk.Toplevel()
+    registration_window.title("Student Registration")
+    registration_window.config(bg="lightblue")
+    registration_window.geometry("1400x700")
+
+    tk.Label(registration_window, text="Student Registration", font=("Arial", 16)).pack(pady=20)
+
+    # Name Entry Field
+    tk.Label(registration_window, text="Enter your name:", font=("Arial", 12)).pack(pady=5)
+    entry_name = tk.Entry(registration_window, font=("Arial", 12))
+    entry_name.pack(pady=5)
+    
+    # ID Entry Field
+    tk.Label(registration_window, text="Enter your ID:", font=("Arial", 12)).pack(pady=5)
+    entry_id = tk.Entry(registration_window, font=("Arial", 12))
+    entry_id.pack(pady=5)
+
+    def register_student():
+        name = entry_name.get()
+        student_id = entry_id.get()
+        
+        if name and student_id:
+            students, _ = load_data()
+            
+            # Check for duplicate student ID
+            if student_id in students['student_id'].astype(str).values:
+                messagebox.showerror("Error", "Student ID already exists.")
+                return
+            
+            # Append new student record
+            students = pd.concat([students, pd.DataFrame({'student_id': [student_id], 'name': [name]})], ignore_index=True)
+            save_data(students, None)  
+            messagebox.showinfo("Success", f"Student {name} registered successfully!")
+            registration_window.destroy()  
+        else:
+            messagebox.showerror("Error", "Please enter both name and ID.")
+
+    # Register Button
+    tk.Button(registration_window, text="Register", command=register_student).pack(pady=10)
+
 
 def generate_report():
     students, attendance = load_data()
@@ -210,6 +261,7 @@ def generate_report():
 
     report_str = "\n".join(f"{name}: {data}" for name, data in report.items())
     messagebox.showinfo("Attendance Report", report_str if report_str else "No attendance records.")
+
 
 if __name__ == "__main__":
     security_page()
